@@ -1,8 +1,109 @@
-<!DOCTYPE html>
-<html>
-<head>Hello World</head>
-<body>
-<h1> HELLO WORLD </h1>
-</body>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Yavniel Padilla - Front End Developer</title>
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Yavniel Padilla, a Full Stack Web Developer In Orlando, Florida">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script
+		src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
 
+	</head>
+	<body>
+		<nav class="navbar navbar-default ">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">Yavniel Padilla</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div>
+			<h1><p>Hello, I'm Yavniel Padilla, a </p> Full-Stack Web Developer</h1>
+			<h2><a href="https://www.linkedin.com/in/yavi-padilla-8916b4b7" target="_blank"><i class="fa fa-linkedin-square"></i></a><a href="https://github.com/ypadilla" target="_blank"><i class="fa fa-github"></i></a></h2>
+		</div>
+
+		<img class="compPic" src="public/assets/images/computerpic.png">
+		<!-- Mini Bio is the class that contains all of the bioparagraphs site wide that is formatted in CSS-->
+		<div class="miniBio">
+			<p class="mainIntro"><img class="codePicture" src="public/assets/images/codepic.png"></p> <br>
+
+			<h4 class="helloBanner">Hello</h4>
+			<p class="bioParagraph">
+				Thank you for visiting my Online Portfolio, I am a Full Stack Web Developer located in Orlando, Florida with a passion for creating interactive web applications with the end user in mind. Feel free to contact me for more information!
+			</p>
+		</div>
+
+		<div class="miniBio">
+			<img class="magicPicture" src="public/assets/images/magic.png">
+			<br>
+			<h4 class="helloBanner">Here Are Some of My Skills</h4>
+			<p class="bioParagraph">
+				I am passionate with every project that I embark on, whether it is professional or personal, these are the tools <i class="fa fa-code" aria-hidden="true"></i>that I use:
+				<br>
+				<img src="public/assets/images/htmlicon.png">
+				<img src="public/assets/images/cssicon.png">
+				<img src="public/assets/images/jsicon.png">
+				<img src="public/assets/images/jqueryicon.png">
+				<img src="public/assets/images/githubicon.png">
+				<br>
+				<img src="public/assets/images/bootstrapicon.png">
+				<img src="public/assets/images/nodejsicon.png">
+				<img src="public/assets/images/angularicon.png">
+				<img src="public/assets/images/mysqlicon.png">
+				<img src="public/assets/images/mongodbicon.png">
+				<img src="public/assets/images/wordpressicon.png">
+			</p>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p>Created by Yavniel Padilla, 2017</p>
+			</div>
+		</footer>
+
+		<!--Anchor that shows the return to top arrow.-->
+		<a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+		<script type="text/javascript">   
+	$(window).scroll(function() {
+    if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+	$('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+
+</script>
+
+</body>
 </html>
